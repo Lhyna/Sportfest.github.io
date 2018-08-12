@@ -226,7 +226,7 @@ textarea.input {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
-
+/*
 #header.transparent-navbar {
   position: absolute;
   left: 0;
@@ -235,7 +235,7 @@ textarea.input {
   background-color: transparent;
   border-bottom: 1px solid #DADADA30;
 }
-
+*/
 #header.fixed-navbar {
   position: fixed !important;
   left: 0;
@@ -279,11 +279,11 @@ textarea.input {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
-
+/*
 #header.transparent-navbar .main-nav li a {
   color: #FFF;
 }
-
+*/
 #header.fixed-navbar .main-nav li a {
   color: #3e691b;
 }

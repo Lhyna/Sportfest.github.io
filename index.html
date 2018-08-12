@@ -59,13 +59,13 @@
 			<!-- Navigation -->
 			<nav id="nav">
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Start</a></li>
-					<li><a href="#about">Das Sportfest</a></li>
-					<li><a href="#schedule">Planung</a></li>
-					<li><a href="#speakers">Sportarten</a></li>
-					<li><a href="#sponsors">Sponsoren</a></li>
-					<li><a href="#contact">Kontakt</a></li>
-					<li><a href="blog.html">Blog</a></li>
+					<li><a href="index.html#home">Start</a></li>
+					<li><a href="index.html#about">Das Sportfest</a></li>
+					<li><a href="index.html#schedule">Planung</a></li>
+					<li><a href="index.html#speakers">Sportarten</a></li>
+					<li><a href="index.html#sponsors">Sponsoren</a></li>
+					<li><a href="index.html#contact">Kontakt</a></li>
+					<li><a href="impressum.html">Impressum</a></li>
 				</ul>
 			</nav>
 			<!-- /Navigation -->
@@ -91,7 +91,7 @@
 						<div class="home-content">
 							<h1>Das Sportfest 2020 in Hamburg!</h1>
 							<h4 class="lead">Kommt vorbei!</h4>
-							<a href="#" class="main-btn">Zur Anmeldung</a>
+							<a href="#" class="main-btn" data-toggle="modal" data-target="#anmeldung-modal-1">Zur Anmeldung</a>
 						</div>
 					</div>
 					<!-- /home content -->
@@ -458,6 +458,33 @@
 		</div>
 		<!-- /container -->
 	</div>
+	<!-- Anmeldung Modal 1-->
+	<div id="anmeldung-modal-1" class="speaker-modal modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
+					<div class="modal-body">
+						<div class="row">
+							</div>
+								<div class="speaker-modal-content">
+									<h2 class="speaker-name">Anmeldung</h2>
+
+									<div class="speaker-events">
+											<p>Bitte diese <a href="./files/Anmeldung_Sportfest_2020.xlsx">Excel-Datei</a> downloaden und ausfüllen!</p>
+										</div>
+
+											<p>Sobald diese ausgefüllt ist, sendet ihr die Datei bitte per <a href="mailto:sportfest2020@barmer.de">E-Mail</a> an uns!</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Anmeldung Modal 1 -->
 	<!-- /Speakers -->
 
 	<!-- Sponsors -->
@@ -558,7 +585,7 @@
 					<div class="cta-content text-center">
 						<h2>Interesse?</h2>
 						<p class="lead">Melde dich und deine Kollegen an!</p>
-						<a href="#" class="main-btn">Zur Anmeldung</a>
+						<a href="#" class="main-btn" data-toggle="modal" data-target="#anmeldung-modal-1">Zur Anmeldung</a>
 					</div>
 				</div>
 				<!-- /cta content -->
@@ -603,7 +630,7 @@
 				<div class="col-sm-4">
 					<div class="contact">
 						<h3>E-Mail</h3>
-						<a href="#">sportfest@barmer.de</a>
+						<a href="mailto:sportfest2020@barmer.de">sportfest2020@barmer.de</a>
 					</div>
 				</div>
 				<!-- /contact -->
