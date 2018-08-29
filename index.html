@@ -58,17 +58,18 @@
 
 			<!-- Navigation -->
 			<nav id="nav">
-				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="index.html#home">Start</a></li>
-					<li><a href="index.html#about">Das Sportfest</a></li>
-					<li><a href="index.html#schedule">Planung</a></li>
-					<li><a href="index.html#speakers">Sportarten</a></li>
-					<li><a href="index.html#sponsors">Sponsoren</a></li>
-					<li><a href="index.html#contact">Kontakt</a></li>
-					<li><a href="impressum.html">Impressum</a></li>
-				</ul>
-			</nav>
-			<!-- /Navigation -->
+					<ul class="main-nav nav navbar-nav navbar-right">
+						<li><a href="index.html#home">Start</a></li>
+						<li><a href="index.html#about">Das Sportfest</a></li>
+						<li><a href="index.html#schedule">Events</a></li>
+						<li><a href="index.html#speakers">Sportarten</a></li>
+					<!--	<li><a href="index.html#sponsors">Sponsoren</a></li> -->
+						<li><a href="anmeldung.html">Anmeldung</a></li>
+						<li><a href="index.html#contact">Kontakt</a></li>
+						<li><a href="impressum.html">Impressum</a></li>
+					</ul>
+				</nav>
+				<!-- /Navigation -->
 		</div>
 		<!-- /container -->
 	</header>
@@ -89,8 +90,9 @@
 					<!-- home content -->
 					<div class="col-md-8 col-md-offset-2">
 						<div class="home-content">
-							<h1>Das Sportfest 2020 in Hamburg!</h1>
-							<h4 class="lead">Kommt vorbei!</h4>
+							<h1>Das Sportfest 2020 </h1>
+							<h1>in Hamburg!</h1>
+							<h4 class="lead">Hummel Hummel - Sport Sport</h4>
 							<a href="#" class="main-btn" data-toggle="modal" data-target="#anmeldung-modal-1">Zur Anmeldung</a>
 						</div>
 					</div>
@@ -119,54 +121,54 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<!-- about content -->
 					<div class="about-content">
-						<p>Seit Jahre Tradition, kommt das Sportfest 2020 wieder in den Norden! </p>
+						<p>Hummel, Hummel – Sport, Sport </p>
+						<p>Einige von euch kennen den Spruch vielleicht in seiner Ursprungsform: „Hummel, Hummel – Mors, Mors“. Doch wo kommt dieser Spruch eigentlich her?</p>
+						<p>Er geht zurück auf den missmutigen Hamburger Wasserträger Hans Hummel. Hummel hieß mit bürgerlichem Namen eigentlich Johann Wilhelm Bentz (1787 – 1854). Sein Spitzname „Hummel“ ist wohl auf den Vormieter seiner Wohnung, dem Stadtsoldaten Daniel Christian Hummel, zurückzuführen. Der Soldat war bei den Straßenjungen beliebt und wurde stets mit „Hummel, Hummel“ begrüßt.</p>
+						<p>Wasserträger verdienten sich ihren Lebensunterhalt damit, eimerweise Trinkwasser zu verkaufen und anderen Bewohnern das Schleppen der Eimer vom Brunnen in die Häuser zu ersparen.</p>
+						<p>Die frechen Straßenjungen ärgerten den Wasserträger Hans Hummel, indem sie ihm  bei der schweren Arbeit „Hummel, Hummel“ hinterherriefen und sogar ihren blanken Hintern zeigten.</p>
+						<p>Der Wasserträger Hummel  konnte aufgrund der schweren Last auf seinen Schultern nur verbal reagieren und erwiderte mit dem kernigen „Mors, Mors“, die Kurzform von „Klei mi an’n Mors“. Das ist die plattdeutsche Variante für „Leck mich am Arsch“.</p>
+						<p>Seit jeher ist der Ausspruch „Hummel, Hummel – Mors, Mors“ als Hamburger Gruß oder auch als Schlachtruf bei Veranstaltungen Hamburger Sportvereine bekannt. </p>
+						<p>In diesem Sinne lasst die Spiele beginnen:</p>
+						<p>HUMMEL HUMMEL – SPORT SPORT!</p>
+						<p></p>
 					</div>
 					<!-- /about content -->
 
-					<!-- Numbers -->
-					<div id="numbers">
-						<!-- row -->
-						<div class="row">
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="400" data-speed="1500">0</span>+</h3>
-									<p>Teilnehmer</p>
-								</div>
-							</div>
-							<!-- /number -->
+<!-- Display the countdown timer in an element -->
+<p id="sportfestcountdown"></p>
 
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="20" data-speed="1500">0</span>+</h3>
-									<p>Sportarten</p>
-								</div>
-							</div>
-							<!-- /number -->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 11, 2019 08:00:00").getTime();
 
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="10" data-speed="1500">0</span>+</h3>
-									<p>Veranstaltungen</p>
-								</div>
-							</div>
-							<!-- /number -->
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="3" data-speed="1500">0</span>+</h3>
-									<p>Tage</p>
-								</div>
-							</div>
-							<!-- /number -->
-						</div>
-						<!-- /row -->
-					</div>
-					<!-- /Numbers -->
-				</div>
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="sportfestcountdown"
+  document.getElementById("sportfestcountdown").innerHTML = "<h3>"+ " Noch " + days + " Tage " + "<p>" + hours + " Stunden " 
+  + minutes + " Minuten und " + seconds + " Sekunden" + "<p>" + "</h3>";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("sportfestcountdown").innerHTML = "Das Sportfest hat begonnen!";
+  }
+}, 1000);
+</script>
+
+		</div>
 			</div>
 			<!-- row -->
 		</div>
@@ -236,25 +238,22 @@
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Sportfest</span> <span style="color: #d71085;">Planung</span></h3>
+					<h3 class="title"><span>Sportfest</span> <span style="color: #d71085;">Events</span></h3>
 				</div>
 				<!-- /section title -->
-
-				<div class="col-md-8 col-md-offset-2">
 
 					<div class="events-wrapper">
 						<!-- event -->
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">31</span>
-									<span class="year">Aug, 2020</span>
+									<span class="day">11.</span>
+									<span class="year">September</span>
 								</div>
 							</div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">Ankunft</h3>
-								<p>Ankunft der Teilnehmer mit Begrüßung.</p>
+								<h3 class="event-title">Freitag</h3>
+								<p>Nordisch by Nature</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -263,36 +262,24 @@
 						<div class="event">
 							<div class="event-hour"></div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">Sport</h3>
-								<p>Beginn der sportlichen Events.</p>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-hour"></div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
+							<!--	<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
 								<h3 class="event-title">Event</h3>
-								<p>Erstes gemeinsames Event.</p>
+								<p>Erstes gemeinsames Event.</p> -->
 							</div>
-						</div>
+
 						<!-- /event -->
 
 						<!-- event -->
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">01</span>
-									<span class="year">Sep, 2020</span>
+									<span class="day">12.</span>
+									<span class="year">September</span>
 								</div>
 							</div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">Fortführung der Sportaktivitäten</h3>
-								<p>Mehr Sport!</p>
+								<h3 class="event-title">Samstag</h3>
+								<p>Danse up de deel</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -301,25 +288,24 @@
 						<div class="event">
 							<div class="event-hour"></div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
+							<!--	<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
 								<h3 class="event-title">Großes Event</h3>
-								<p>Party?!</p>
+								<p>Party?!</p> -->
 							</div>
-						</div>
+						
 						<!-- /event -->
 
 						<!-- event -->
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">02</span>
-									<span class="year">Sep, 2020</span>
+									<span class="day">13</span>
+									<span class="year">September</span>
 								</div>
 							</div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">Abreise</h3>
-								<p>Auskatern und Frühstück.</p>
+								<h3 class="event-title">Sonntag</h3>
+								<p>In Hamburg sagt man Tschüss</p>
 							</div>
 						</div>
 						<!-- /event -->
@@ -327,12 +313,12 @@
 						<!-- event -->
 						<div class="event">
 							<div class="event-hour"></div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">Ende</h3>
+						<div class="event-content">
+							<!--	<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
+								<h3 class="event-title">Ende</h3> 
 								<p>Heimweg.</p>
 							</div>
-						</div>
+						</div>-->
 						<!-- /event -->
 					</div>
 
@@ -359,6 +345,37 @@
 					<h3 class="title"><span>Die</span> <span style="color: #d71085;">Sportarten</span></h3>
 				</div>
 				<!-- section title -->
+				<!-- speaker -->
+					<div class="col-md-4 col-sm-6">
+						<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
+							<div class="speaker-img">
+								<img src="./img/volleyball.jpg" alt="">
+							</div>
+							<div class="speaker-body">
+								<div class="speaker-content">
+									<h2>Volleyball</h2>
+									<!-- <span>Halle, Hamburg</span>-->
+								</div>
+							</div>
+						</div>
+					</div>
+		<!-- /speaker -->
+
+				<!-- speaker -->
+				<div class="col-md-4 col-sm-6">
+						<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
+							<div class="speaker-img">
+								<img src="./img/questionmark.jpg" alt="">
+							</div>
+							<div class="speaker-body">
+								<div class="speaker-content">
+									<h2>Spiele ohne Grenzen</h2>
+									<!-- <span>Halle, Hamburg</span>-->
+								</div>
+							</div>
+						</div>
+					</div>
+		<!-- /speaker -->
 
 				<!-- speaker -->
 				<div class="col-md-4 col-sm-6">
@@ -369,7 +386,7 @@
 						<div class="speaker-body">
 							<div class="speaker-content">
 								<h2>Fußball</h2>
-								<span>Halle, Hamburg</span>
+								<!-- <span>Halle, Hamburg</span> -->
 							</div>
 						</div>
 					</div>
@@ -380,20 +397,36 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" data-toggle="modal" data-target="#modal-yoga">
 						<div class="speaker-img">
-							<img src="./img/sunset.jpg" alt="">
+							<img src="./img/tischtennis.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-content">
-								<h2>Yoga</h2>
-								<span>Park, Hamburg</span>
+								<h2>Tischtennis</h2>
+								<!-- <span>Park, Hamburg</span> -->
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- /speaker -->
 
+						<!-- speaker -->
+						<div class="col-md-4 col-sm-6">
+								<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
+									<div class="speaker-img">
+										<img src="./img/laufen.jpg" alt="">
+									</div>
+									<div class="speaker-body">
+										<div class="speaker-content">
+											<h2>Laufen</h2>
+											<!-- <span>Halle, Hamburg</span>-->
+										</div>
+									</div>
+								</div>
+							</div>
+				<!-- /speaker -->
+
 				<!-- speaker modal -->
-				<div id="speaker-modal-1" class="speaker-modal modal fade">
+				<!-- <div id="speaker-modal-1" class="speaker-modal modal fade">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
@@ -431,9 +464,9 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<!-- /speaker modal -->
-				<div id="modal-yoga" class="speaker-modal modal fade">
+				<!-- <div id="modal-yoga" class="speaker-modal modal fade">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
@@ -472,11 +505,11 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>  -->
 			<!-- /row -->
 		</div>
 		<!-- /container -->
-	</div>
+	</div> 
 	<!-- Anmeldung Modal 1-->
 	<div id="anmeldung-modal-1" class="speaker-modal modal fade">
 			<div class="modal-dialog">
@@ -506,88 +539,6 @@
 		<!--Anmeldung Modal 1 -->
 	<!-- /Speakers -->
 
-	<!-- Sponsors -->
-	<div id="sponsors" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Unsere</span> <span style="color: #d71085;">Sponsoren</span></h3>
-				</div>
-				<!-- /section title -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="#" class="sponsor">
-						<img src="./img/sponsor.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
-
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Sponsors -->
 
 	<!-- CTA -->
 	<div id="cta" class="section">
@@ -631,29 +582,41 @@
 				<div class="col-sm-4">
 					<div class="contact">
 						<h3>Ansprechpartner</h3>
-						<p>Sportfest Team</p>
+						<p>Fabian</p>
+						<p>Jessi</p>
+						<p>Lara</p>
 					</div>
 				</div>
 				<!-- /contact -->
+			
+				<div class="col-sm-4">
+						<div class="contact">
+								<div class="speaker" >
+										<div class="speaker-img">
+											<img src="./img/sportfestteam.jpg" alt="">
+										</div>
+								</div>
+							
+						</div>
+
+
+				</div>
 
 				<!-- contact -->
 				<div class="col-sm-4">
 					<div class="contact">
 						<h3>Durchwahl</h3>
-						<p>631-203</p>
-					</div>
-				</div>
-				<!-- /contact -->
+						<p>631-417</p>
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
 						<h3>E-Mail</h3>
 						<a href="mailto:sportfest2020@barmer.de">sportfest2020@barmer.de</a>
+							
+							
 					</div>
 				</div>
 				<!-- /contact -->
 
+			
 			</div>
 			<!-- /row -->
 		</div>
