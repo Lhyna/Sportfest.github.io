@@ -678,6 +678,10 @@ textarea.input {
 	EVENTS
 ===========================================================*/
 
+.events-wrapper{
+  padding-left: 40%;
+}
+
 .event {
   position: relative;
 }
@@ -875,7 +879,7 @@ textarea.input {
 }
 
 .contact-social {
-  text-align: right;
+  text-align: center;
   margin: 10px 0px;
 }
 
