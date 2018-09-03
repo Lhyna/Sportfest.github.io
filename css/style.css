@@ -320,7 +320,7 @@ textarea.input {
 }
 
 #header.transparent-navbar .navbar-toggle {
-  color: #FFF;
+  color: #3e691b;
 }
 
 #header.fixed-navbar .navbar-toggle {
@@ -679,7 +679,7 @@ textarea.input {
 ===========================================================*/
 
 .events-wrapper{
-  padding-left: 40%;
+  padding-left: 25%;
 }
 
 .event {
