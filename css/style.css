@@ -799,9 +799,9 @@ textarea.input {
   transition: 0.3s opacity;
 }
 
-.sponsor:hover {
+/* .sponsor:hover {
   opacity: 1;
-}
+}*/
 
 .sponsor>img {
   width: 100%;
