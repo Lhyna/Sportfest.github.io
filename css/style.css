@@ -459,7 +459,7 @@ textarea.input {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: transparent;
-  color: #dd0a37;
+  color: #d71085;
   width: 90px;
   height: 90px;
   line-height: 90px;
@@ -645,7 +645,7 @@ textarea.input {
   text-align: center;
   font-size: 14px;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #d71085;
   color: #fff;
   margin-right: 5px;
   -webkit-transition: 0.3s opacity;
@@ -793,7 +793,7 @@ textarea.input {
 
 .sponsor {
   display: block;
-  opacity: 0.5;
+  opacity: 1;
   margin-bottom: 30px;
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
