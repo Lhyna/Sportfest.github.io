@@ -519,6 +519,13 @@ textarea.input {
   right: 0;
 }
 
+.speaker .hotel-body {
+  position: absolute;
+  bottom: 140px;
+  left: 0;
+  right: 0;
+}
+
 .speaker .speaker-content {
   position: relative;
   padding: 17px;
@@ -527,11 +534,25 @@ textarea.input {
   z-index: 20;
 }
 
+.speaker .hotel-content {
+  position: relative;
+  padding: 17px;
+  text-align: right;
+  z-index: 20;
+}
+
 .speaker .speaker-content>h2 {
   color: #FFF;
 }
 
+.speaker .hotel-content>h2 {
+  color: #FFF;
+}
+
 .speaker .speaker-content>span {
+  color: #fff;
+}
+.speaker .hotel-content>span {
   color: #fff;
 }
 
