@@ -505,7 +505,7 @@ textarea.input {
 }
 
 .speaker:hover:after {
-  opacity: 0.8;
+  opacity: 0.4;
 }
 
 .speaker .speaker-img>img {
@@ -521,7 +521,7 @@ textarea.input {
 
 .speaker .hotel-body {
   position: absolute;
-  bottom: 140px;
+  bottom: 10px;
   left: 0;
   right: 0;
 }
@@ -537,6 +537,9 @@ textarea.input {
 .speaker .hotel-content {
   position: relative;
   padding: 17px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: #d71085;
   text-align: right;
   z-index: 20;
 }
@@ -554,6 +557,7 @@ textarea.input {
 }
 .speaker .hotel-content>span {
   color: #fff;
+
 }
 
 .speaker .speaker-social {
