@@ -535,7 +535,7 @@ textarea.input {
 
 .speaker .speaker-body {
   position: absolute;
-  bottom: 60px;
+  bottom: 20px;
   left: 0;
   right: 0;
 }
@@ -546,7 +546,12 @@ textarea.input {
   left: 0;
   right: 0;
 }
-
+.speaker .event-body {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
 .speaker .speaker-content {
   position: relative;
   padding: 17px;
@@ -565,6 +570,16 @@ textarea.input {
   z-index: 20;
 }
 
+.speaker .event-content {
+  position: relative;
+  padding: 17px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: #d71085;
+  text-align: right;
+  z-index: 20;
+}
+
 .speaker .speaker-content>h2 {
   color: #FFF;
 }
@@ -572,7 +587,9 @@ textarea.input {
 .speaker .hotel-content>h2 {
   color: #FFF;
 }
-
+.speaker .event-content>h2 {
+  color: #FFF;
+}
 .speaker .speaker-content>span {
   color: #fff;
 }
@@ -580,7 +597,10 @@ textarea.input {
   color: #fff;
 
 }
+.speaker .event-content>span {
+  color: #fff;
 
+}
 .speaker .speaker-social {
   position: absolute;
   top: 0;
@@ -724,66 +744,7 @@ textarea.input {
 	EVENTS
 ===========================================================*/
 
-.events-wrapper{
-  padding-left: 25%;
-}
 
-.event {
-  position: relative;
-}
-
-.event+.event {
-  margin-top: 60px;
-}
-
-.event:after {
-  content: "";
-  position: absolute;
-  left: 60px;
-  top: 0px;
-  bottom: 0px;
-  width: 4px;
-  background-color: #d71085;
-}
-
-.event:last-child:after {
-  height: 60px;
-}
-
-.event+.event:before {
-  content: "";
-  position: absolute;
-  left: 60px;
-  height: 60px;
-  top: -60px;
-  width: 4px;
-  background-color: #d71085;
-}
-
-.event .event-day {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: #d71085;
-  z-index: 10;
-}
-
-.event .event-hour {
-  position: absolute;
-  left: 62px;
-  top: 60px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #d71085;
-  z-index: 10;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
 
 .event .event-day>div {
   position: absolute;
