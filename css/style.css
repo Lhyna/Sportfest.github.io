@@ -52,7 +52,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0px 0px 15px;
+  margin: 10px 0px 10px;
   color: #84bd00;
   font-weight: 700;
 }
@@ -169,7 +169,7 @@ textarea.input {
   bottom: 0;
   background-size: cover;
   z-index: -1;
-  background-position: 0% 30%;
+  background-position: 0% 32%;
 }
 .section-title {
   text-align: center;
@@ -512,6 +512,12 @@ textarea.input {
   margin-bottom: 30px;
 }
 
+.event-content {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
 .speaker:after {
   content: "";
   position: absolute;
@@ -526,7 +532,7 @@ textarea.input {
 }
 
 .speaker:hover:after {
-  opacity: 0.4;
+  opacity: 0.0;
 }
 
 .speaker .speaker-img>img {
